@@ -1,0 +1,89 @@
+>>>WEBIRC ais22b cgiirc 203.132.77.36 203.132.77.36
+
+>>>NICK Jane
+
+>>>USER Jane 0 * :Jane Doe
+
+<<<:irc.tribefm.com NOTICE AUTH :*** Looking up your hostname...
+<<<:irc.tribefm.com NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead
+<<<:irc.tribefm.com 001 Jane :Welcome to the Tribe FM IRC Network Jane!Jane@203.132.77.36
+<<<:irc.tribefm.com 002 Jane :Your host is irc.tribefm.com, running version Unreal3.2.8.1
+<<<:irc.tribefm.com 003 Jane :This server was created Sat Mar 26 2011 at 05:20:28 MSK
+<<<:irc.tribefm.com 004 Jane irc.tribefm.com Unreal3.2.8.1 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj
+<<<:irc.tribefm.com 005 Jane CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=10 CHANLIMIT=#:10 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+<<<:irc.tribefm.com 005 Jane MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTG NETWORK=Tribe-FM CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT :are supported by this server
+<<<:irc.tribefm.com 005 Jane STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+<<<:irc.tribefm.com 251 Jane :There are 8 users and 4 invisible on 2 servers
+<<<:irc.tribefm.com 252 Jane 9 :operator(s) online
+<<<:irc.tribefm.com 254 Jane 4 :channels formed
+<<<:irc.tribefm.com 255 Jane :I have 3 clients and 1 servers
+<<<:irc.tribefm.com 265 Jane :Current Local Users: 3  Max: 5
+<<<:irc.tribefm.com 266 Jane :Current Global Users: 12  Max: 14
+<<<:irc.tribefm.com 375 Jane :- irc.tribefm.com Message of the Day - 
+<<<:irc.tribefm.com 372 Jane :- 15/4/2011 7:42
+<<<:irc.tribefm.com 372 Jane :- 04,01   _________ _______ _________ ______   _______      _______  _______   
+<<<:irc.tribefm.com 372 Jane :- 04,01   \__   __/(  ____ )\__   __/(  ___ \ (  ____ \    (  ____ \(       )   
+<<<:irc.tribefm.com 372 Jane :- 04,01      ) (   | (    )|   ) (   | (   ) )| (    \/    | (    \/| () () |   
+<<<:irc.tribefm.com 372 Jane :- 04,01      | |   | (____)|   | |   | (__/ / | (__        | (__    | || || |   
+<<<:irc.tribefm.com 372 Jane :- 04,01      | |   |     __)   | |   |  __ (  |  __)       |  __)   | |(_)| |   
+<<<:irc.tribefm.com 372 Jane :- 04,01      | |   | (\ (      | |   | (  \ \ | (          | (      | |   | |   
+<<<:irc.tribefm.com 372 Jane :- 04,01      | |   | ) \ \_____) (___| )___) )| (____/\    | )      | )   ( |   
+<<<:irc.tribefm.com 372 Jane :- 04,01      )_(   |/   \__/\_______/|/ \___/ (_______/    |/       |/     \|   
+<<<:irc.tribefm.com 372 Jane :- 01,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 01,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 00,01                 .:Welcome to the Tribe FM Chat Server:.                 
+<<<:irc.tribefm.com 372 Jane :- 01,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 04,01+------------------------------ RULES ----------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01 * READ THE TOPIC (the text at the top of the channel)                   
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No name calling                                                       
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No insulting remarks                                                  
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No harassment                                                         
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No threats                                                            
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No vulgarity                                                          
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No obscenity                                                          
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No graphic sexual or anatomical references                            
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No accusations                                                        
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No bickering                                                          
+<<<:irc.tribefm.com 372 Jane :- 00,01 * No flooding (posting identical messages, posting meaningles           
+<<<:irc.tribefm.com 372 Jane :- 00,01   messages and posting in any way that results in an unreasonable       
+<<<:irc.tribefm.com 372 Jane :- 00,01   amount of space being taken in the channel)                           
+<<<:irc.tribefm.com 372 Jane :- 00,01 * We advise individuals not to share too much personal information, as  
+<<<:irc.tribefm.com 372 Jane :- 00,01   this is the internet after all, and there are some dangerous people   
+<<<:irc.tribefm.com 372 Jane :- 00,01   out there                                                             
+<<<:irc.tribefm.com 372 Jane :- 04,01+-----------------------------------------------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 04,01+----------------------------- POLICY ----------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01 We have a two strike policy for those that break the rules.             
+<<<:irc.tribefm.com 372 Jane :- 00,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 00,01 First offence:  Being kicked from the channel one or more times.        
+<<<:irc.tribefm.com 372 Jane :- 00,01 Second offence: Either a temporary, or a permanent ban.                 
+<<<:irc.tribefm.com 372 Jane :- 00,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 00,01 These actions will be taken at the sole discretion of the Channel       
+<<<:irc.tribefm.com 372 Jane :- 00,01 Operators. You may be banned outright if deemed necessary.              
+<<<:irc.tribefm.com 372 Jane :- 04,01+-----------------------------------------------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 04,01+------------------------------ INFO -----------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01 Website:  www.tribefm.com                                               
+<<<:irc.tribefm.com 372 Jane :- 00,01 Email:    support@tribefm.com                                           
+<<<:irc.tribefm.com 372 Jane :- 00,01 Facebook: Tribe FM (www.facebook.com/groups/tribefm)                    
+<<<:irc.tribefm.com 372 Jane :- 04,01+-----------------------------------------------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 04,01+------------------------------ BOTS -----------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01 NickOP  - Nickname Bot   Use: Nickname Registration Service             
+<<<:irc.tribefm.com 372 Jane :- 00,01 ChanOP  - Channel Bot    Use: Channel Administration Service            
+<<<:irc.tribefm.com 372 Jane :- 00,01 NoteOP  - Note Bot       Use: Note/Memo System                          
+<<<:irc.tribefm.com 372 Jane :- 00,01 OperOP  - Operator Bot   Use: Network Operator Service                  
+<<<:irc.tribefm.com 372 Jane :- 00,01 Gonzo   - Fantasy Bot    Use: Gives DJ's the required permissions       
+<<<:irc.tribefm.com 372 Jane :- 00,01 Beaker  - Shout Bot      Use: Announces the current song playing    
+<<<:irc.tribefm.com 372 Jane :- 00,01 Fozzie  - Chat Bot       Use: Makes anouncements for listeners          
+<<<:irc.tribefm.com 372 Jane :- 04,01+-----------------------------------------------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01                                                                         
+<<<:irc.tribefm.com 372 Jane :- 04,01+---------------------------- COMMANDS ---------------------------------+
+<<<:irc.tribefm.com 372 Jane :- 00,01 /nick <nickname>        Use: Changes your nick to <nickname>            
+<<<:irc.tribefm.com 372 Jane :- 00,01 /tune                   Use: Announces that you like the song           
+<<<:irc.tribefm.com 372 Jane :- 00,01 /search <query>         Use: Searches the request DB for <query>        
+<<<:irc.tribefm.com 372 Jane :- 00,01 /request <id>           Use: Requests the DJ to play song <id>          
+<<<:irc.tribefm.com 372 Jane :- 02,01           * Note: ID is the number returned from /search *              
+<<<:irc.tribefm.com 372 Jane :- 04,01+-----------------------------------------------------------------------+
+<<<:irc.tribefm.com 376 Jane :End of /MOTD command.
+<<<:Jane MODE Jane :+iwx
