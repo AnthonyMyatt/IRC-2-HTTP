@@ -54,7 +54,7 @@ void IrcSocket::OnConnect()
 {
     // m_nick, m_name, m_peer_host and m_peer_ip are already set. 
 
-    std::string cmd = "WEBIRC ais22b cgiirc ";
+    std::string cmd = "WEBIRC pass cgiirc ";
     cmd += m_peer_host;
     cmd += " ";
     cmd += m_peer_ip;
