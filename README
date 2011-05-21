@@ -1,0 +1,81 @@
++----------------------------------------------------------+
+|  _____ _____   _____ ___  _    _ _______ _______ _____   |
+| |_   _|  __ \ / ____|__ \| |  | |__   __|__   __|  __ \  |
+|   | | | |__) | |       ) | |__| |  | |     | |  | |__) | |
+|   | | |  _  /| |      / /|  __  |  | |     | |  |  ___/  |
+|  _| |_| | \ \| |____ / /_| |  | |  | |     | |  | |      |
+| |_____|_|  \_\\_____|____|_|  |_|  |_|     |_|  |_|      |
+|                                                          |
++----------------------------------------------------------+
+| Contents                                                 |
+|   1. Introduction                                        |
+|   2. License                                             |
+|   3. File Structure                                      |
+|   4. Installation                                        |
+|      a) Proxy                                            |
+|      b) Client                                           |
+|   5. Configuration                                       |
+|      a) Proxy                                            |
+|      b) Client                                           |
++----------------------------------------------------------+
+| 1. Intruduction                                          |
+|                                                          |
+| IRC-2-HTTP is made up of two components; the c++ proxy   |
+| and the javascript(ajax) client. The proxy maintains the |
+| connection to the IRC server and is polled by the client |
+| at a regular interval for new information. This means    |
+| that an IRC session can be emulated in a web browser.    |
++----------------------------------------------------------+
+| 2. License                                               |
+|                                                          |
+| Proxy  - copyright (c) 2011 - Wadjet Software            |
+| Client - copyright (c) 2011 - Anthony Myatt              |
+|                                                          |
+| Both are released under the GPL license. A copy of the   |
+| license is included and can also be found at the gnu     |
+| website (http://www.gnu.org/licenses/gpl.html).          |
++----------------------------------------------------------+
+| 3. File Structure                                        |
+|                                                          |
+| Proxy                                                    |
+|     |                                                    |
+|     +-src     (main source)                              |
+|     |                                                    |
+|     +-socket  (c++ sockets source)                       |
+|                                                          |
+| Client                                                   |
+|      |                                                   |
+|      +-images                                            |
+|      |                                                   |
+|      +-scripts (required javascript files)               |
+|      |                                                   |
+|      +-css     (css style files)                         |
++----------------------------------------------------------+
+| 4. Installation                                          |
+|                                                          |
+|    a) Proxy                                              |
+|                                                          |
+| i.   cd into the socket directory                        |
+| ii.  run make                                            |
+| iii. run make install                                    |
+|                                                          |
+|    b) Client                                             |
+|                                                          |
+| i. copy the contents of the client directory your web    |
+|    servers public_html directory and make sure the files |
+|    have the needed permissions.                          |
++----------------------------------------------------------+
+| 5. Configuration                                         |
+|                                                          |
+|    a) Proxy                                              |
+|                                                          |
+| The configuration file (irc2http.conf) has a few values  |
+| that can be chaned; some of these must be changed before |
+| irc2http will work.                                      |
+|                                                          |
+|    b) Client                                             |
+|                                                          |
+| Like the proxy there is a configuration file (config.js) |
+| that has values that need to be changed before irc2http  |
+| will work and others that can be adjusted if needed.     |
++----------------------------------------------------------+
