@@ -29,7 +29,8 @@
 |          commands. The incoming messages that it doesn't |
 |          recognise will be relayed to the client as raw  |
 |          messages. (The server is single threaded)       |
-|  Client: The client polls the server for new messages as |
+|  Client: The client polls the server for new messages    |
+|          and sends messages via json commands.           |
 +----------------------------------------------------------+
 | 2. License                                               |
 |                                                          |
@@ -66,9 +67,9 @@
 |                                                          |
 |    b) Client                                             |
 |                                                          |
-| i. copy the contents of the client directory your web    |
+| i. copy the contents of the client directory to your web |
 |    servers public_html directory and make sure the files |
-|    have the needed permissions.                          |
+|    have the required permissions.                        |
 +----------------------------------------------------------+
 | 5. Configuration                                         |
 |                                                          |
