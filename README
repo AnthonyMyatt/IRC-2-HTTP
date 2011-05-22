@@ -20,11 +20,16 @@
 +----------------------------------------------------------+
 | 1. Intruduction                                          |
 |                                                          |
-| IRC-2-HTTP is made up of two components; the c++ proxy   |
-| and the javascript(ajax) client. The proxy maintains the |
-| connection to the IRC server and is polled by the client |
-| at a regular interval for new information. This means    |
-| that an IRC session can be emulated in a web browser.    |
+| IRC-2-HTTP is made up of two components;                 |
+|   Proxy: The server creates an IRC session for every     |
+|          user connected to it. It will relay commands    |
+|          it recognises to the IRC server, including the  |
+|          raw command. It will also translate the         |
+|          incoming messages it recognises to json         |
+|          commands. The incoming messages that it doesn't |
+|          recognise will be relayed to the client as raw  |
+|          messages. (The server is single threaded)       |
+|  Client: The client polls the server for new messages as |
 +----------------------------------------------------------+
 | 2. License                                               |
 |                                                          |
