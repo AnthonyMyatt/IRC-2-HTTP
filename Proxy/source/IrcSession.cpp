@@ -111,6 +111,22 @@ void IrcSession::on_msg(std::string from, std::string cmd, std::string msg)
     {
         on_nick(from, msg);
     }
+    else if(cmd == "375" || cmd== "372" || cmd == "376") // MOTD Numerics
+    {
+        std::stringstream ss(msg);
+        std::string to;
+        std::string m;
+        ss >> to;
+        getline(ss , m);
+        unsigned int i = 0;
+        while((i < m.size()-1) && (m[i] == ' ' || m[i] == ':'))
+        {
+            i++;
+        }
+        if(i < m.size())
+            m = m.substr(i);
+        on_motd(m);
+    }
     else
     {
         std::string str;
@@ -182,6 +198,18 @@ void IrcSession::on_nick(std::string from, std::string new_nick)
     n.push_back(JSONNode("cmd" , "nickchange"));
     n.push_back(JSONNode("new" , new_nick));
     n.push_back(JSONNode("old" , from));
+    msgs.push_back(n.write());
+}
+
+/** @brief on_motd
+  *
+  */
+void IrcSession::on_motd(std::string msg)
+{
+    JSONNode n(JSON_NODE);
+    n.push_back(JSONNode("seq" , m_seq++));
+    n.push_back(JSONNode("cmd" , "motd"));
+    n.push_back(JSONNode("msg" , msg));
     msgs.push_back(n.write());
 }
 

@@ -36,6 +36,7 @@ private:
     virtual void on_part(std::string from, std::string chan);
     virtual void on_userinfo(std::string nick);
     virtual void on_msg(std::string from, std::string cmd, std::string msg);
+    virtual void on_motd(std::string msg);
 
 
 
