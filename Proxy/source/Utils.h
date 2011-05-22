@@ -15,6 +15,9 @@ public:
     static void httpd_stop();
     static void init(std::string fconf);
     static std::string get_irc_host();
+    static std::string get_web_domain();
+    static std::string get_webirc_user();
+    static std::string get_webirc_pass();
     static unsigned int get_irc_port();
     static unsigned int get_server_port();
     static int get_max_clients();
@@ -32,6 +35,8 @@ private:
     static int max_clients;
     static unsigned int server_port;
     static std::string web_domain;
+    static std::string webirc_user;
+    static std::string webirc_pass;
 
     static std::string prepare_conf_line(std::string);
 

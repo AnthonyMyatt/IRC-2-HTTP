@@ -176,14 +176,16 @@ void ServerSocket::send_responses()
 
 void ServerSocket::send_ok()
 {
+    std::string web_domain = Utils::get_web_domain();
     Send("HTTP/1.1 200 OK\r\n"
 		 "Server: IRC2HTTP\r\n"
-		 "Access-Control-Allow-Origin: *\r\n"
+		 "Access-Control-Allow-Origin: " + web_domain + "\r\n"
 		 "Content-Type: text/plain\r\n\r\n");
 }
 
 void ServerSocket::handle_options()
 {
+        std::string web_domain = Utils::get_web_domain();
 	Send("HTTP/1.1 200 OK\r\n"
 		 "Server: IRC2HTTP\r\n"
 		 "Allow: POST,OPTIONS\r\n"
@@ -191,7 +193,7 @@ void ServerSocket::handle_options()
 		 "Keep-Alive: timeout=1, max=100\r\n"
 		 "Connection: Keep-Alive\r\n"
 		 "Content-Type: text/plain\r\n"
-		 "Access-Control-Allow-Origin: *\r\n"
+		 "Access-Control-Allow-Origin: " + web_domain + "\r\n"
 		 "Access-Control-Allow-Methods: POST,OPTIONS\r\n"
 		 "Access-Control-Allow-Headers: x-requested-with, content-type, accept\r\n"
 		 "Access-Control-Max-Age: 1728000\r\n\r\n");

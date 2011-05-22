@@ -13,7 +13,8 @@ std::string Utils::timeout_msg = "Client has timed out!";
 int Utils::max_clients = 1000;
 unsigned int Utils::server_port = 20002;
 std::string Utils::web_domain = "chat.tribefm.com";
-
+std::string Utils::webirc_user = "IRC2HTTP";
+std::string Utils::webirc_pass = "pass";
 
 /**
  *  Prepares a configuration file line for parsing.
@@ -107,6 +108,16 @@ void Utils::init(std::string fconf)
             ss >> value;
             web_domain = value;
         }
+        else if(key == "WebIrcUser")
+        {
+            ss >> value;
+            webirc_user = value;
+        }
+        else if(key == "WebIrcPass")
+        {
+            ss >> value;
+            webirc_pass = value;
+        }
         else
         {
             std::cerr << "Error reading " << fconf << std::endl;
@@ -140,6 +151,29 @@ std::string Utils::get_irc_host()
     return(irc_host);
 }
 
+/** @brief get_web_domain
+  *
+  */
+std::string Utils::get_web_domain()
+{
+    return(web_domain);
+}
+
+/** @brief get_webirc_user
+  *
+  */
+std::string Utils::get_webirc_user()
+{
+    return(webirc_user);
+}
+
+/** @brief get_webirc_user
+  *
+  */
+std::string Utils::get_webirc_pass()
+{
+    return(webirc_pass);
+}
 
 bool Utils::irc_socket_log()
 {

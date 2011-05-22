@@ -53,8 +53,14 @@ void IrcSocket::set_peer_ip(std::string ip)
 void IrcSocket::OnConnect()
 {
     // m_nick, m_name, m_peer_host and m_peer_ip are already set. 
-
-    std::string cmd = "WEBIRC pass cgiirc ";
+    
+    std::string webirc_user = Utils::get_webirc_user();
+    std::string webirc_pass = Utils::get_webirc_pass();
+    std::string cmd = "WEBIRC ";
+    cmd += webirc_pass;
+    cmd += " ";
+    cmd += webirc_user;
+    cmd += " ";
     cmd += m_peer_host;
     cmd += " ";
     cmd += m_peer_ip;
